@@ -15,11 +15,24 @@ h1{
 }
 .lane{
   width: 40%;
+  height: 20px;
+  padding-left: 5px;
 }
 .space{
   width: 20%;
   background-color: white;
+  height: 20px;
 }
 .active{
   background-color: blue;
+}
+#start{
+  background-color: orange;
+  height: 30px; 
+  padding-left: 5px;
+}
+#finish{
+  background-color: orange;
+  height: 30px;
+  padding-left: 5px;
 }
