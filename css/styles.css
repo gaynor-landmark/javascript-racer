@@ -1,0 +1,22 @@
+body{
+  margin: 20px;
+}
+h1{
+  color: red;
+}
+.track{
+  background-color: green;
+  width: 40%;
+  margin: auto;
+}
+.trackRow{
+  
+
+}
+.lane{
+  width: 40%;
+}
+.space{
+  width: 20%;
+  background-color: white;
+}
