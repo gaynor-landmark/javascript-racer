@@ -12,11 +12,14 @@
     <h1>Racer Game</h1>
     <h2>Instructions</h2>
     <ul>
-      <li>2 Racer Game</li>
       <li>First to the finish wins!</li>
       <li>Racer 1 uses the 'q' key</li>
       <li>Racer 2 uses the 'p' key</li>
     </ul>
+    Length of race:<input type="text" value="10"></input>
+    <br>
+    <button type="button" onClick="buildTrack()">Build Track</button>
+    <br>
     <table id="trackTable" class="track">
       <tr class="trackRow" >
         <td id="start" colspan="3">START</td>
@@ -26,7 +29,7 @@
         <td class="space"></td>
         <td class="lane2 active2">Racer 2</td>
       </tr>
-      <tr class="trackRow">
+     <!--  <tr class="trackRow">
         <td class="lane1"> </td>
         <td class="space"> </td>
         <td class="lane2"> </td>
@@ -65,7 +68,7 @@
         <td class="lane1"> </td>
         <td class="space"> </td>
         <td class="lane2"> </td>
-      </tr>
+      </tr> -->
     </table> 
     <table class="track" >
       <tr>
@@ -80,6 +83,7 @@
         <td id="winner2" colspan="3">WINNER!</td>
       </tr>
     </table>
+    <button type="button" onClick="window.location.reload()">Restart</button>
   </body>
   <script src="js/javascript.js"></script>
 </html>

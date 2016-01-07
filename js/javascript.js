@@ -50,5 +50,10 @@ $(document).ready(function(){
     }
   });
 
+  $("#restart").click(function(){
+    $(document).location.reload();
+  });
+
 });
+
 
