@@ -4,6 +4,10 @@ body{
 h1{
   color: red;
 }
+.trackWidth{
+  width: 40%;
+  margin: auto;
+}
 .track{
   background-color: gray;
   width: 40%;
@@ -33,14 +37,13 @@ h1{
 #start{
   background-color: orange;
   height: 30px; 
-  padding-left: 5px;
+  padding-left: 5px; 
 }
 #finish{
   background-color: orange;
   height: 30px;
   padding-left: 5px;
 }
-
 #winner1{
   background-color: blue;
   display: none;

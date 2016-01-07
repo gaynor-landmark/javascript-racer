@@ -18,7 +18,7 @@ function updatePosition (racer){
           col.classList.remove('active' + racer);
           removed = 1;
         }
-      }     
+      } 
     }
   }
   if (removed === 1){
@@ -33,7 +33,17 @@ function updatePosition (racer){
 function declareWinner(winner){
   $("#winner" + winner).show(); 
 }
+
+function buildTrack(length){
+  $(".track:last").append('<tr class="trackRow"><td class="lane1 active1">Racer 1</td><td class="space"> </td><td class="lane2 active2">Racer 2</td></tr>');
+  for (var i = 0; i < length; i++){
+   $(".track:last").append('<tr class="trackRow"><td class="lane1"> </td><td class="space"> </td><td class="lane2"> </td></tr>');
+  }
+}
+
 $(document).ready(function(){
+  var length = document.getElementById("length").value;
+  buildTrack(length);
   var winner = "";
   $(document).keyup(function(e){
     console.log(e.which);
@@ -49,11 +59,5 @@ $(document).ready(function(){
       declareWinner(winner);
     }
   });
-
-  $("#restart").click(function(){
-    $(document).location.reload();
-  });
-
 });
-
 
