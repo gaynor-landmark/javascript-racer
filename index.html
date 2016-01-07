@@ -15,17 +15,19 @@
       <li>Racer 1 uses the 'q' key</li>
       <li>Racer 2 uses the 'p' key</li>
     </ul>
-    Length of race:<input id="length" type="text" value="10"></input>
-    <br>
+    Length of race:<input id="length" type="text" value="10"></input>  
     <button type="button" onClick="buildTrack()">Rebuild Track</button>
-    <br>
+    <br><br>
     <table class="trackWidth">
       <tr class="trackRow" >
         <td id="start" colspan="3">START LINE</td>
       </tr>
     </table>
-    <table id="trackTable" class="track">
-    <!-- rows will be appended here -->
+    <div id="theTrack">
+      <table id="trackTable" class="track">
+      <!-- rows will be appended here -->
+      </table>
+    </div>
     <table class="trackWidth" >
       <tr>
         <td id="finish" colspan="3">FINISH LINE</td>

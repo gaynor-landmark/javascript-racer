@@ -34,16 +34,20 @@ function declareWinner(winner){
   $("#winner" + winner).show(); 
 }
 
-function buildTrack(length){
+function buildTrack(){
+  //first remove any existing track rows
+  $("#trackTable").remove();
+  $("#theTrack").append('<table id="trackTable" class="track"></table>')
   $(".track:last").append('<tr class="trackRow"><td class="lane1 active1">Racer 1</td><td class="space"> </td><td class="lane2 active2">Racer 2</td></tr>');
+  var length = document.getElementById("length").value;
   for (var i = 0; i < length; i++){
    $(".track:last").append('<tr class="trackRow"><td class="lane1"> </td><td class="space"> </td><td class="lane2"> </td></tr>');
   }
 }
 
 $(document).ready(function(){
-  var length = document.getElementById("length").value;
-  buildTrack(length);
+  
+  buildTrack();
   var winner = "";
   $(document).keyup(function(e){
     console.log(e.which);
