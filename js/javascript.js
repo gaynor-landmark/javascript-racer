@@ -21,16 +21,34 @@ function updatePosition (racer){
       }     
     }
   }
+  if (removed === 1){
+    //this racer has reached the end
+    return racer;
+  }
+  else{
+    return "";
+  }
 };
+
+function declareWinner(winner){
+  $("#winner" + winner).show(); 
+}
 $(document).ready(function(){
-  updatePosition(1);
-  updatePosition(2);
-  updatePosition(1);
-  updatePosition(2);
-  updatePosition(1);
-  updatePosition(2);
-  updatePosition(2);
-  updatePosition(2);
+  var winner = "";
+  $(document).keyup(function(e){
+    console.log(e.which);
+    if (winner === ""){
+      if (e.which == 81){
+      winner = updatePosition(1);
+      }
+      else if (e.which == 80){
+        winner = updatePosition(2);
+      }
+    }
+    else{
+      declareWinner(winner);
+    }
+  });
 
 });
 

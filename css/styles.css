@@ -9,10 +9,6 @@ h1{
   width: 40%;
   margin: auto;
 }
-.trackRow{
-  
-
-}
 .lane1{
   width: 40%;
   height: 20px;
@@ -43,4 +39,15 @@ h1{
   background-color: orange;
   height: 30px;
   padding-left: 5px;
+}
+
+#winner1{
+  background-color: blue;
+  display: none;
+  margin-left: 2px;
+}
+#winner2{
+  background-color: green;
+  display: none;
+  margin-left:2px;
 }
